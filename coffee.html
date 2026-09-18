@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kadal Coffee House</title>
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header id="siteHeader">
+    <div class="logo">Coffee House</div>
+    <nav id="siteNav">
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#visit" class="nav-link">Visit</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <svg class="hero-art" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <path d="M25 40 h50 v22 a25 25 0 0 1 -50 0 z" fill="none" stroke="#C68B4A" stroke-width="3"/>
+      <path d="M75 44 h8 a10 10 0 0 1 0 20 h-8" fill="none" stroke="#C68B4A" stroke-width="3"/>
+      <path d="M35 38 q-3 -8 4 -14" fill="none" stroke="#D9C3A5" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M48 38 q-3 -8 4 -14" fill="none" stroke="#D9C3A5" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M61 38 q-3 -8 4 -14" fill="none" stroke="#D9C3A5" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="20" y1="85" x2="80" y2="85" stroke="#C68B4A" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <h1>Slow mornings,<br>strong filter coffee.</h1>
+    <p>Beans roasted every Tuesday. Brewed the way your grandmother would approve.</p>
+    <a href="#menu" class="button">See the menu</a>
+  </section>
+
+
+  <section id="menu" class="section">
+    <h2>Menu</h2>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="drinks">Drinks</button>
+      <button class="filter-btn" data-filter="bakes">Bakes</button>
+    </div>
+
+    <div class="menu-list">
+      <div class="menu-item" data-category="drinks" data-name="Filter Coffee" data-price="40">
+        <div>
+          <h3><svg class="menu-icon" viewBox="0 0 24 24"><path d="M4 8h13v6a6 6 0 0 1-12 0z" fill="none" stroke="#9A5B27" stroke-width="1.6"/><path d="M17 9h2a3 3 0 0 1 0 6h-2" fill="none" stroke="#9A5B27" stroke-width="1.6"/><line x1="3" y1="20" x2="17" y2="20" stroke="#9A5B27" stroke-width="1.6" stroke-linecap="round"/></svg>Filter Coffee</h3>
+          <p>Chicory blend, poured hot and frothy.</p>
+          <span class="price">₹40</span>
+        </div>
+        <button class="add-btn" aria-label="Add Filter Coffee">+</button>
+      </div>
+
+      <div class="menu-item" data-category="drinks" data-name="Espresso" data-price="90">
+        <div>
+          <h3><svg class="menu-icon" viewBox="0 0 24 24"><path d="M4 8h13v6a6 6 0 0 1-12 0z" fill="none" stroke="#9A5B27" stroke-width="1.6"/><path d="M17 9h2a3 3 0 0 1 0 6h-2" fill="none" stroke="#9A5B27" stroke-width="1.6"/><line x1="3" y1="20" x2="17" y2="20" stroke="#9A5B27" stroke-width="1.6" stroke-linecap="round"/></svg>Espresso</h3>
+          <p>One small cup. Bold and bitter.</p>
+          <span class="price">₹90</span>
+        </div>
+        <button class="add-btn" aria-label="Add Espresso">+</button>
+      </div>
+
+      <div class="menu-item" data-category="drinks" data-name="Cappuccino" data-price="140">
+        <div>
+          <h3><svg class="menu-icon" viewBox="0 0 24 24"><path d="M4 8h13v6a6 6 0 0 1-12 0z" fill="none" stroke="#9A5B27" stroke-width="1.6"/><path d="M17 9h2a3 3 0 0 1 0 6h-2" fill="none" stroke="#9A5B27" stroke-width="1.6"/><line x1="3" y1="20" x2="17" y2="20" stroke="#9A5B27" stroke-width="1.6" stroke-linecap="round"/></svg>Cappuccino</h3>
+          <p>Espresso with steamed milk and thick foam.</p>
+          <span class="price">₹140</span>
+        </div>
+        <button class="add-btn" aria-label="Add Cappuccino">+</button>
+      </div>
+
+      <div class="menu-item" data-category="drinks" data-name="Cold Brew" data-price="160">
+        <div>
+          <h3><svg class="menu-icon" viewBox="0 0 24 24"><path d="M4 8h13v6a6 6 0 0 1-12 0z" fill="none" stroke="#9A5B27" stroke-width="1.6"/><path d="M17 9h2a3 3 0 0 1 0 6h-2" fill="none" stroke="#9A5B27" stroke-width="1.6"/><line x1="3" y1="20" x2="17" y2="20" stroke="#9A5B27" stroke-width="1.6" stroke-linecap="round"/></svg>Cold Brew</h3>
+          <p>Steeped for 16 hours. Served over ice.</p>
+          <span class="price">₹160</span>
+        </div>
+        <button class="add-btn" aria-label="Add Cold Brew">+</button>
+      </div>
+
+      <div class="menu-item" data-category="bakes" data-name="Butter Croissant" data-price="110">
+        <div>
+          <h3><svg class="menu-icon" viewBox="0 0 24 24"><path d="M3 15c2-8 8-11 13-9 4 1.5 4 6 1 7-1 3-5 5-9 5-2 0-4-1-5-3z" fill="none" stroke="#9A5B27" stroke-width="1.6"/></svg>Butter Croissant</h3>
+          <p>Baked fresh each morning at six.</p>
+          <span class="price">₹110</span>
+        </div>
+        <button class="add-btn" aria-label="Add Butter Croissant">+</button>
+      </div>
+
+      <div class="menu-item" data-category="bakes" data-name="Chocolate Cake" data-price="130">
+        <div>
+          <h3><svg class="menu-icon" viewBox="0 0 24 24"><path d="M3 15c2-8 8-11 13-9 4 1.5 4 6 1 7-1 3-5 5-9 5-2 0-4-1-5-3z" fill="none" stroke="#9A5B27" stroke-width="1.6"/></svg>Chocolate Cake</h3>
+          <p>Dense, dark, one thick slice.</p>
+          <span class="price">₹130</span>
+        </div>
+        <button class="add-btn" aria-label="Add Chocolate Cake">+</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="section about">
+    <h2>About us</h2>
+    <div class="about-wrap">
+      <svg class="about-art" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="35" cy="40" rx="16" ry="22" fill="#9A5B27" transform="rotate(-20 35 40)"/>
+        <path d="M27 25 q8 15 0 30" fill="none" stroke="#FBF7F0" stroke-width="2" transform="rotate(-20 35 40)"/>
+        <ellipse cx="68" cy="60" rx="16" ry="22" fill="#C68B4A" transform="rotate(15 68 60)"/>
+        <path d="M60 46 q8 15 0 30" fill="none" stroke="#FBF7F0" stroke-width="2" transform="rotate(15 68 60)"/>
+      </svg>
+      <p>
+        We opened in 2019 with one roaster and six chairs. We still have the same
+        roaster. The coffee is bought straight from small farms in the Nilgiris,
+        roasted here, and ground when you order it.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="visit" class="section">
+    <h2>Visit</h2>
+    <p>12 Beach Road, Velankanni, Tamil Nadu</p>
+    <p>Open daily, 7:00 AM to 9:00 PM</p>
+    <p>Phone: 044 1234 5678</p>
+
+    <form class="reserve-form" id="reserveForm" novalidate>
+      <div>
+        <input type="text" id="resName" placeholder="Your name">
+        <span class="field-error" id="errName">Please enter your name.</span>
+      </div>
+      <div>
+        <input type="tel" id="resPhone" placeholder="Phone number">
+        <span class="field-error" id="errPhone">Please enter a valid 10-digit phone number.</span>
+      </div>
+      <div>
+        <input type="date" id="resDate" placeholder="Date">
+        <span class="field-error" id="errDate">Please choose a date.</span>
+      </div>
+      <div>
+        <select id="resGuests">
+          <option value="">Number of guests</option>
+          <option value="1">1 guest</option>
+          <option value="2">2 guests</option>
+          <option value="3">3 guests</option>
+          <option value="4">4 guests</option>
+          <option value="5+">5 or more</option>
+        </select>
+        <span class="field-error" id="errGuests">Please select the number of guests.</span>
+      </div>
+      <button type="submit" class="button">Reserve a table</button>
+      <p class="form-msg" id="resMsg"></p>
+    </form>
+  </section>
+
+    <footer>
+    <p>© 2026 Kadal Coffee House</p>
+  </footer>
+
+  <!-- Floating cart -->
+  <button class="cart-btn" id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+  <div class="cart-panel" id="cartPanel">
+    <h4>Your order</h4>
+    <div id="cartLines"><p class="cart-empty">No items yet.</p></div>
+    <div class="cart-total" id="cartTotalRow" style="display:none;">
+      <span>Total</span>
+      <span id="cartTotal">₹0</span>
+    </div>
+  </div>
+
+
+  <button class="top-btn" id="topBtn" aria-label="Back to top">&#8593;</button>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
